@@ -1,0 +1,135 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ambow.contact"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk android:minSdkVersion="14" />
+7-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+8
+9    <uses-feature android:name="android.hardware.camera" />
+9-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:6:5-60
+9-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:6:19-57
+10    <!-- 相机权限 -->
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:8:5-65
+11-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:8:22-62
+12    <!-- 写入SD卡的权限：如果你希望保存相机拍照后的照片 -->
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:10:5-81
+13-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:10:22-78
+14    <!-- 读取SD卡的权限:打开相册选取图片所必须的权限 -->
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:12:5-80
+15-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:12:22-77
+16
+17    <application
+17-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:13:5-54:19
+18        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+18-->[com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+19        android:debuggable="true"
+20        android:icon="@drawable/icon"
+20-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:13:18-47
+21        android:label="@string/app_name"
+21-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:13:48-80
+22        android:testOnly="true" >
+23        <provider
+23-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:14:7-15:63
+24            android:name="com.ambow.contact.ContactsProvider"
+24-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:14:17-48
+25            android:authorities="com.ambow.provider.contact" />
+25-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:15:13-61
+26
+27        <activity
+27-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:17:9-35:20
+28            android:name="com.ambow.contact.Contacts"
+28-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:17:19-43
+29            android:label="@string/app_name" >
+29-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:18:19-51
+30            <intent-filter>
+30-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:19:13-22:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:20:17-69
+31-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:20:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:21:17-77
+33-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:21:27-74
+34            </intent-filter>
+35            <intent-filter>
+35-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:23:13-29:29
+36                <action android:name="android.intent.action.VIEW" />
+36-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:24:17-69
+36-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:24:25-66
+37                <action android:name="android.intent.action.EDIT" />
+37-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:25:17-69
+37-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:25:25-66
+38                <action android:name="android.intent.action.PICK" />
+38-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:26:17-69
+38-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:26:25-66
+39
+40                <category android:name="android.intent.category.DEFAULT" />
+40-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:17-76
+40-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:27-73
+41
+42                <data android:mimeType="vnd.android.cursor.dir/vnd.ambow.contacts" />
+42-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:17-86
+42-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:23-83
+43            </intent-filter>
+44            <intent-filter>
+44-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:30:13-34:29
+45                <action android:name="android.intent.action.GET_CONTENT" />
+45-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:31:17-76
+45-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:31:25-73
+46
+47                <category android:name="android.intent.category.DEFAULT" />
+47-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:17-76
+47-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:27-73
+48
+49                <data android:mimeType="vnd.android.cursor.item/vnd.ambow.contacts" />
+49-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:17-86
+49-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:23-83
+50            </intent-filter>
+51        </activity>
+52        <activity
+52-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:37:9-52:20
+53            android:name="com.ambow.contact.ContactEditor"
+53-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:37:19-48
+54            android:label="@string/app_name" >
+54-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:38:19-51
+55            <intent-filter android:label="@string/menu_edit" >
+55-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:39:13-44:29
+55-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:39:28-61
+56                <action android:name="android.intent.action.VIEW" />
+56-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:24:17-69
+56-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:24:25-66
+57                <action android:name="android.intent.action.EDIT" />
+57-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:25:17-69
+57-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:25:25-66
+58
+59                <category android:name="android.intent.category.DEFAULT" />
+59-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:17-76
+59-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:27-73
+60
+61                <data android:mimeType="vnd.android.cursor.item/vnd.ambow.contacts" />
+61-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:17-86
+61-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:23-83
+62            </intent-filter>
+63            <intent-filter>
+63-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:46:13-50:29
+64                <action android:name="android.intent.action.INSERT" />
+64-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:47:17-71
+64-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:47:25-68
+65
+66                <category android:name="android.intent.category.DEFAULT" />
+66-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:17-76
+66-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:27-73
+67
+68                <data android:mimeType="vnd.android.cursor.dir/vnd.ambow.contacts" />
+68-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:17-86
+68-->/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:23-83
+69            </intent-filter>
+70        </activity>
+71    </application>
+72
+73</manifest>

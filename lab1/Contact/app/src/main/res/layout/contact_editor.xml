@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TableRow android:id="@+id/TableRow06" android:layout_width="fill_parent" android:layout_height="80dp">
+  <TextView android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="80dp" android:text="@string/company" android:textSize="16px"></TextView>
+  <EditText android:id="@+id/EditText06" android:layout_height="wrap_content" android:layout_width="fill_parent"/>
+</TableRow>
+
+<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent" android:layout_height="80dp">
+  <TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="80dp" android:text="@string/name" android:textSize="16px"></TextView>
+  <EditText android:id="@+id/EditText01" android:layout_height="wrap_content" android:layout_width="fill_parent"/>
+</TableRow>
+
+<TableRow android:id="@+id/TableRow02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+  <TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="80dp" android:text="@string/mobile" android:textSize="16px"></TextView>
+  <EditText android:id="@+id/EditText02" android:layout_height="wrap_content" android:layout_width="fill_parent"></EditText>
+</TableRow>
+
+<TableRow android:id="@+id/TableRow03" android:layout_width="fill_parent" android:layout_height="80dp">
+  <TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="80dp" android:text="@string/email" android:textSize="16px"></TextView>
+  <EditText android:id="@+id/EditText03" android:layout_height="wrap_content" android:layout_width="fill_parent"></EditText>
+</TableRow>
+
+  <TableRow
+      android:id="@+id/TableRow05"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="right">
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="@string/save"
+        android:textSize="24sp"></Button>
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="@string/cancel"
+        android:textSize="24sp"></Button>
+
+    <Button
+        android:id="@+id/take_photo"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:text="拍照" />
+
+    <Button
+        android:id="@+id/choose_from_album"
+        android:layout_width="100dp"
+        android:text="从相册选取" />
+  </TableRow>
+
+  <ImageView
+      android:id="@+id/picture"
+      android:layout_width="match_parent"
+      android:layout_height="221dp"
+      android:src="@android:drawable/sym_def_app_icon" />
+
+
+</LinearLayout>

@@ -27,7 +27,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text=" Chen Yuan,\n Liang Youzhi,\n Qian Rui,\n Wang Jionghao,\n Lei Zixing"
+        android:text=" Chen Yuan,\n Liang Youzhi,\n Qian Rui,\n Jionghao Wang,\n Lei Zixing"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

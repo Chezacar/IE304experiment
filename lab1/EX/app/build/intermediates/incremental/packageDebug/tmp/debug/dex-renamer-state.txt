@@ -1,0 +1,4 @@
+#Sat Mar 28 12:13:53 CST 2020
+base.0=/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/EX/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

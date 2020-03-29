@@ -1,0 +1,200 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+MERGED from [com.android.support:support-v4:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/67de5bfd4ca267576d162584696dbadf/support-v4-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/62e63886e9a74f2a40252c42d1294201/support-media-compat-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/96d86264598069e1d65f64bc136259b4/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/2eab25a2f971f78c4fa24cb0deb258c7/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/baad2cd5c2c5211559a817b5dfc6efb6/support-core-utils-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f2c747354d0ff24353b68598001122f5/loader-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f6b3cae03b3ce8a02da483d9e4ca59b2/viewpager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/383ae76403d3cc8f37e6bbc0d64ef927/coordinatorlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/4f19d93efd15d633ce21772db271bb64/drawerlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/641336afd213c078b5863dd13e8f79d1/slidingpanelayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/c5ab232ac04e4b4ff6cdde7c56cb1cb4/customview-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/d80a9d35f55e6e36c4a1b50f4f4f7691/swiperefreshlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/037ec59a7073df8cc81b8a8e7d18f4ba/asynclayoutinflater-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ccb0e6c90f55e16b0c58a3004b50ef23/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f5c498dd3123eccd58d32c574fcf6fc3/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/8d25bfbf8ee45d70e8a4be3d3e8d1a25/documentfile-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/4c5cf903438d6c35e23c63c9ac114287/localbroadcastmanager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ee4cd2c5ab5e123822ce26feec96d870/print-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/95296c541bb80cad59b412f88eba2115/interpolator-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/835672350f575a78903f79cca6cf209d/cursoradapter-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/8aa9b573de8b98f7f52d859de925adeb/viewmodel-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/1024302b5b95db10fdb95f0e3b0201da/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/5ddc6b6af1460f7cf1797d3466731332/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/bdf87e1d40e8a18b516476168ca9908b/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:1-55:12
+	package
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:3:7-34
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:5:7-34
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:4:7-30
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.camera
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:6:5-60
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:6:19-57
+uses-permission#android.permission.CAMERA
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:8:22-62
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:12:22-77
+application
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:13:5-54:19
+MERGED from [com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ccb0e6c90f55e16b0c58a3004b50ef23/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ccb0e6c90f55e16b0c58a3004b50ef23/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:13:48-80
+	android:icon
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:13:18-47
+provider#com.ambow.contact.ContactsProvider
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:14:7-15:63
+	android:authorities
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:15:13-61
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:14:17-48
+activity#com.ambow.contact.Contacts
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:17:9-35:20
+	android:label
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:18:19-51
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:17:19-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:21:27-74
+intent-filter#action:name:android.intent.action.EDIT+action:name:android.intent.action.PICK+action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/vnd.ambow.contacts
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:23:13-29:29
+action#android.intent.action.VIEW
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:24:25-66
+action#android.intent.action.EDIT
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:25:25-66
+action#android.intent.action.PICK
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:27:27-73
+data
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:17-86
+	android:mimeType
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:28:23-83
+intent-filter#action:name:android.intent.action.GET_CONTENT+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.item/vnd.ambow.contacts
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:30:13-34:29
+action#android.intent.action.GET_CONTENT
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:31:17-76
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:31:25-73
+activity#com.ambow.contact.ContactEditor
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:37:9-52:20
+	android:label
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:38:19-51
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:37:19-48
+intent-filter#action:name:android.intent.action.EDIT+action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.item/vnd.ambow.contacts
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:39:13-44:29
+	android:label
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:39:28-61
+intent-filter#action:name:android.intent.action.INSERT+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/vnd.ambow.contacts
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:46:13-50:29
+action#android.intent.action.INSERT
+ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:47:17-71
+	android:name
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml:47:25-68
+uses-sdk
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v4:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/67de5bfd4ca267576d162584696dbadf/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/67de5bfd4ca267576d162584696dbadf/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/62e63886e9a74f2a40252c42d1294201/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/62e63886e9a74f2a40252c42d1294201/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/96d86264598069e1d65f64bc136259b4/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/96d86264598069e1d65f64bc136259b4/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/2eab25a2f971f78c4fa24cb0deb258c7/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/2eab25a2f971f78c4fa24cb0deb258c7/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/baad2cd5c2c5211559a817b5dfc6efb6/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/baad2cd5c2c5211559a817b5dfc6efb6/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f2c747354d0ff24353b68598001122f5/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f2c747354d0ff24353b68598001122f5/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f6b3cae03b3ce8a02da483d9e4ca59b2/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f6b3cae03b3ce8a02da483d9e4ca59b2/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/383ae76403d3cc8f37e6bbc0d64ef927/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/383ae76403d3cc8f37e6bbc0d64ef927/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/4f19d93efd15d633ce21772db271bb64/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/4f19d93efd15d633ce21772db271bb64/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/641336afd213c078b5863dd13e8f79d1/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/641336afd213c078b5863dd13e8f79d1/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/c5ab232ac04e4b4ff6cdde7c56cb1cb4/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/c5ab232ac04e4b4ff6cdde7c56cb1cb4/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/d80a9d35f55e6e36c4a1b50f4f4f7691/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/d80a9d35f55e6e36c4a1b50f4f4f7691/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/037ec59a7073df8cc81b8a8e7d18f4ba/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/037ec59a7073df8cc81b8a8e7d18f4ba/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/a10666b0bb8fc6787f707ae99075800e/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ccb0e6c90f55e16b0c58a3004b50ef23/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ccb0e6c90f55e16b0c58a3004b50ef23/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f5c498dd3123eccd58d32c574fcf6fc3/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/f5c498dd3123eccd58d32c574fcf6fc3/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/8d25bfbf8ee45d70e8a4be3d3e8d1a25/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/8d25bfbf8ee45d70e8a4be3d3e8d1a25/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/4c5cf903438d6c35e23c63c9ac114287/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/4c5cf903438d6c35e23c63c9ac114287/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ee4cd2c5ab5e123822ce26feec96d870/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/ee4cd2c5ab5e123822ce26feec96d870/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/95296c541bb80cad59b412f88eba2115/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/95296c541bb80cad59b412f88eba2115/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/835672350f575a78903f79cca6cf209d/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/835672350f575a78903f79cca6cf209d/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/8aa9b573de8b98f7f52d859de925adeb/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/8aa9b573de8b98f7f52d859de925adeb/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/1024302b5b95db10fdb95f0e3b0201da/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/1024302b5b95db10fdb95f0e3b0201da/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/5ddc6b6af1460f7cf1797d3466731332/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/5ddc6b6af1460f7cf1797d3466731332/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/bdf87e1d40e8a18b516476168ca9908b/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Applications/Android Studio.app/Contents/gradle/gradle-5.4.1/caches/transforms-2/files-2.1/bdf87e1d40e8a18b516476168ca9908b/runtime-1.1.1/AndroidManifest.xml:20:5-44
+INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+		ADDED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/Contact/app/src/main/AndroidManifest.xml

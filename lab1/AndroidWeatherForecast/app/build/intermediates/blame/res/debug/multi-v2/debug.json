@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/AndroidWeatherForecast/app/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/chezacar/Desktop/IE304 无线通信原理与移动网络/IE304experiment/lab1/AndroidWeatherForecast/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,4,6,2,7,5,8",
+                        "startColumns": "4,0,0,4,0,0,0",
+                        "startOffsets": "129,186,282,57,326,240,380",
+                        "endColumns": "59,52,42,70,52,40,38",
+                        "endOffsets": "184,238,324,123,378,280,418"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,172,219,290,347,392",
+                        "endColumns": "59,56,46,70,56,44,42",
+                        "endOffsets": "110,167,214,285,342,387,430"
+                    }
+                }
+            ]
+        }
+    ]
+}
