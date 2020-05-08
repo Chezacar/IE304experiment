@@ -3,6 +3,24 @@ package sjtu.iiot.wi_fi_scanner_iiot;
 /*****************************************************************************************************************
  * Created by HelloShine on 2019-3-24.
  * ***************************************************************************************************************/
+import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.wifi.ScanResult;
+import android.net.wifi.WifiManager;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.rtt.WifiRttManager;
+import android.net.wifi.rtt.RangingRequest;
+import android.net.wifi.rtt.RangingResult;
+import android.net.wifi.rtt.RangingResultCallback;
+import android.os.Handler;
+import android.os.Message;
+import android.Manifest.permission;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
+import android.util.Log;
+import android.widget.Toast;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -11,10 +29,7 @@ import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
-import android.content.Context;
-import android.net.wifi.ScanResult;
-import android.net.wifi.WifiManager;
-import android.util.Log; //Log can be utilized for debug.
+
 
 public class SuperWiFi extends MainActivity{
 
@@ -23,27 +38,28 @@ public class SuperWiFi extends MainActivity{
      * Log.d("TEST_INFO","Your Own String Type Content Here");
      * You can also generate the String via ("String" + int/double value). for example, "CurTime " + 20 = "CurTime 20"
      * ***************************************************************************************************************/
-    private String FileLabelName = "YourNameHere";// Define the file Name
+    private String FileLabelName = "Group2: Cy Lyz Lzx Qr Wjh";// Define the file Name
     /*****************************************************************************************************************
      * You can define the Wi-Fi SSID to be measured in FileNameGroup, more than 2 SSIDs are OK.
      * It is noting that multiple Wi-Fi APs might share the same SSID such as SJTU.
      * ***************************************************************************************************************/
-    private String FileNameGroup[] = {"SJTU","IIoT-434"};
-
+    private String FileNameGroup[] = {"CMCC-rZC5"};
+    private WifiInfo mWifiInfo;
     private int TestTime = 10;//Number of measurement
     private int ScanningTime = 1000;//Wait for (?) ms for next scan
-
+    final Handler mRangeRequestDelayHandler = new Handler();
+    private ScanResult mScanResult;
     private int NumberOfWiFi = FileNameGroup.length;
-
+    private RttRangingResultCallback mRttRangingResultCallback;
     // RSS_Value_Record and RSS_Measurement_Number_Record are used to record RSSI values
     private int[] RSS_Value_Record = new int[NumberOfWiFi];
     private int[] RSS_Measurement_Number_Record = new int[NumberOfWiFi];
-
-
     private WifiManager mWiFiManager = null;
+    private WifiRttManager mWifiRttManager;
     private Vector<String> scanned = null;
     boolean isScanning = false;
-
+    private static final String TAG = "APRRActivity";
+    private WifiRttManager mgr;
     public SuperWiFi(Context context)
     {
         this.mWiFiManager = (WifiManager)context.getSystemService(Context.WIFI_SERVICE);
@@ -57,7 +73,7 @@ public class SuperWiFi extends MainActivity{
         {
             public void run() {
                 scanned.clear();//Clear last result
-                for(int index = 1;index <= NumberOfWiFi; index++){
+                for (int index = 1; index <= NumberOfWiFi; index++) {
                     RSS_Value_Record[index - 1] = 0;
                     RSS_Measurement_Number_Record[index - 1] = 1;
                 }
@@ -66,20 +82,31 @@ public class SuperWiFi extends MainActivity{
                         ("yyyy-MM-dd HH:mm:ss");
                 Date curDate = new Date(System.currentTimeMillis()); //Get the current time
                 String CurTimeString = formatter.format(curDate);
-                for(int index = 1;index <= NumberOfWiFi; index++){
-                    write2file(FileLabelName + "-" + FileNameGroup[index - 1] + ".txt","Test_ID: " + testID + " TestTime: " + CurTimeString + " BEGIN\r\n");
+                for (int index = 1; index <= NumberOfWiFi; index++) {
+                    write2file(FileLabelName + "-" + FileNameGroup[index - 1] + ".txt", "Test_ID: " + testID + " TestTime: " + CurTimeString + " BEGIN\r\n");
                 }
                 //Scan for a certain times
-                while(CurTestTime++ <= TestTime) performScan();
+                while (CurTestTime++ <= TestTime) performScan();
 
-                for(int index = 1;index <= NumberOfWiFi; index++){//Record the average of the result
-                    scanned.add(FileLabelName + "-" + FileNameGroup[index - 1] + " = " + RSS_Value_Record[index - 1]/ RSS_Measurement_Number_Record[index - 1] + "\r\n");
+                for (int index = 1; index <= NumberOfWiFi; index++) {//Record the average of the result
+                    if (RSS_Measurement_Number_Record[index - 1] > 1) {
+                        RSS_Measurement_Number_Record[index - 1] = RSS_Measurement_Number_Record[index - 1] - 1;
+                    }
+                    scanned.add(FileLabelName + "-" + FileNameGroup[index - 1] + " = " + RSS_Value_Record[index - 1] / RSS_Measurement_Number_Record[index - 1] + "\r\n");
                 }
                 /*****************************************************************************************************************
 
                  You can insert your own code here for localization.
-
                  * ***************************************************************************************************************/
+                RangingRequest.Builder builder = new RangingRequest.Builder();
+                List<ScanResult> SR = mWiFiManager.getScanResults();
+                builder.addAccessPoints(SR);
+                RangingRequest req = builder.build();
+                mgr = (WifiRttManager) getSystemService(Context.WIFI_RTT_RANGING_SERVICE);
+                mRttRangingResultCallback = new RttRangingResultCallback();
+                mgr.startRanging(req, getMainExecutor(), mRttRangingResultCallback);
+               //int distance = RangingResult.getDistanceMm();
+
                 for(int index = 1;index <= NumberOfWiFi; index++){//Mark the end of the test in the file
                     write2file(FileLabelName + "-" + FileNameGroup[index - 1] + ".txt","testID:"+testID+"END\r\n");
                 }
@@ -129,7 +156,6 @@ public class SuperWiFi extends MainActivity{
 
 
 
-
     public void ScanRss(){
         startScan();
     }
@@ -139,6 +165,7 @@ public class SuperWiFi extends MainActivity{
     public Vector<String> getRSSlist(){
         return scanned;
     }
+
 
     private void write2file(String filename, String a){//Write to the SD card
         try {
@@ -155,4 +182,24 @@ public class SuperWiFi extends MainActivity{
             e.printStackTrace();
         }
     }
+
+    private class RttRangingResultCallback extends RangingResultCallback {
+        public void onRangingFailure(int code){
+            Log.d(TAG, "onRangingFailure() code: " + code);
+        }
+
+        public void onRangingResults(@NonNull List<RangingResult> list) {
+            Log.d(TAG, "onRangingResults(): " + list);
+            List<ScanResult> sr = mWiFiManager.getScanResults();
+            Iterator<ScanResult> it = sr.iterator();
+            if (list.size() == 1) {
+                RangingResult rangingResult = list.get(0);
+                if (rangingResult.getStatus() == RangingResult.STATUS_SUCCESS) {
+                    scanned.add("距离mac地址为" + rangingResult.getMacAddress().toString() + "的路由器" + rangingResult.getDistanceStdDevMm() + "毫米\r\n");
+                }
+            }
+        }
+    }
+
+
 }
