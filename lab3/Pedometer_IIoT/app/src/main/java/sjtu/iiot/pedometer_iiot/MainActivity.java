@@ -29,17 +29,20 @@ public class MainActivity extends Activity implements SensorEventListener,
     /** Called when the activity is first created. */
     //Create a LOG label
     private Button mWriteButton, mStopButton;
-    private boolean doWrite = false;
+    private boolean doWrite = false, transfer = false;
     private SensorManager sm;
     private float lowX = 0, lowY = 0, lowZ = 0;
     private final float FILTERING_VALAUE = 0.1f;
-    private TextView AT,ACT;
+    public int num_step = 0, temp_step = 0 ,clock = 0;
+    public double temp_acc = 0, temp_res = 0;
+    private TextView AT,ACT,Steps;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AT = (TextView)findViewById(R.id.AT);
         ACT = (TextView)findViewById(R.id.onAccuracyChanged);
+        Steps = (TextView)findViewById(R.id.Steps);
         verifyStoragePermissions(this);
         //Create a SensorManager to get the system’s sensor service
         sm =
@@ -101,12 +104,50 @@ public class MainActivity extends Activity implements SensorEventListener,
             float highZ = Z - lowZ;
             double highA = Math.sqrt(highX * highX + highY * highY + highZ
                     * highZ);
+            if (temp_res>0 && highA < temp_acc && transfer == false && highA > 1.8){
+                transfer = true;
+            }
+
+            if(transfer == true && highA < temp_acc){
+                temp_step += 1;
+            }
+
+            if(transfer == true && (highA > temp_acc)){
+                transfer = false;
+                temp_step = 0;
+            }
+
+            if(temp_step == 7){
+                num_step += 1;
+                temp_step = 0;
+                transfer = false;
+            }
+
+            /*
+            if(highA > 4 && transfer == false){
+                transfer = true;
+            }
+            if(highA < 4 && transfer == true){
+                num_step += 1;
+                transfer = false;
+            }
+            */
+            Steps.setText("numbers of steps is :"+num_step/2);
+            temp_res = highA - temp_acc;
+            temp_acc = highA;
             DecimalFormat df = new DecimalFormat("#,##0.000");
             message = df.format(highX) + " ";
             message += df.format(highY) + " ";
             message += df.format(highZ) + " ";
             message += df.format(highA) + "\n";
-            AT.setText(message + "\n");
+            if(clock == 120) {
+                AT.setText("\n" + "\n" + "highX:" + highX + "\n" + " highY:" + highY + "\n" + " highZ:" + highZ + "\n" + "highA:" + highA);
+                clock = 0;
+            }
+            else {
+                clock += 1;
+            }
+            //AT.setText(message + "\n");
             if (doWrite) {
                 write2file(message);
             }
