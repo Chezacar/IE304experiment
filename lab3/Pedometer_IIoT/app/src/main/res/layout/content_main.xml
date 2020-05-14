@@ -7,9 +7,9 @@
     <CheckedTextView
         android:id="@+id/AT"
         android:layout_width="match_parent"
-        android:layout_height="392dp"
+        android:layout_height="320dp"
         android:text="@string/AT"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <CheckedTextView
         android:id="@+id/onAccuracyChanged"
@@ -37,8 +37,15 @@
     <TextView
         android:id="@+id/Steps"
         android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_height="48dp"
         android:text="@string/Steps"
-        android:textSize="24dp"/>
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/Bumps"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:text="@string/Bumps"
+        android:textSize="24dp" />
 </LinearLayout>
 

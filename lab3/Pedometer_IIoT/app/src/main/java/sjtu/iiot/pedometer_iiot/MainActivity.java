@@ -24,6 +24,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
+import org.apache.commons.math3.complex.Complex;
+import org.apache.commons.math3.transform.DctNormalization;
+import org.apache.commons.math3.transform.FastCosineTransformer;
+import org.apache.commons.math3.transform.TransformType;
+
 public class MainActivity extends Activity implements SensorEventListener,
         OnClickListener {
     /** Called when the activity is first created. */
@@ -34,8 +40,9 @@ public class MainActivity extends Activity implements SensorEventListener,
     private float lowX = 0, lowY = 0, lowZ = 0;
     private final float FILTERING_VALAUE = 0.1f;
     public int num_step = 0, temp_step = 0 ,clock = 0;
-    public double temp_acc = 0, temp_res = 0;
-    private TextView AT,ACT,Steps;
+    public double temp_acc = 0, temp_res = 0, Ehighf = 0, Esum = 0, highpercent = 0;
+    private TextView AT,ACT,Steps,Bumps;
+    private double t_domain[] = new double[1024], f_domain[] = new double[1024], complex[] = new double[1024];
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +50,7 @@ public class MainActivity extends Activity implements SensorEventListener,
         AT = (TextView)findViewById(R.id.AT);
         ACT = (TextView)findViewById(R.id.onAccuracyChanged);
         Steps = (TextView)findViewById(R.id.Steps);
+        Bumps = (TextView)findViewById(R.id.Bumps);
         verifyStoragePermissions(this);
         //Create a SensorManager to get the system’s sensor service
         sm =
@@ -104,6 +112,7 @@ public class MainActivity extends Activity implements SensorEventListener,
             float highZ = Z - lowZ;
             double highA = Math.sqrt(highX * highX + highY * highY + highZ
                     * highZ);
+            t_domain[clock] = highA;
             if (temp_res>0 && highA < temp_acc && transfer == false && highA > 1.8){
                 transfer = true;
             }
@@ -140,8 +149,32 @@ public class MainActivity extends Activity implements SensorEventListener,
             message += df.format(highY) + " ";
             message += df.format(highZ) + " ";
             message += df.format(highA) + "\n";
-            if(clock == 120) {
+            if((clock+1)%128 ==0){
                 AT.setText("\n" + "\n" + "highX:" + highX + "\n" + " highY:" + highY + "\n" + " highZ:" + highZ + "\n" + "highA:" + highA);
+            }
+            if(clock == 1023) {
+                DFT dft = new DFT();
+                f_domain = dft.dft(t_domain);
+
+                /*
+                f_domain = FCT.transform(t_domain, TransformType.FORWARD);
+                */
+
+                for (int i = 0; i < 511; i++){
+                    f_domain[i] = Math.sqrt(t_domain[i] * t_domain[i] + complex[i] * complex[i]);
+                    if (i <= 400){
+                        Esum += f_domain[i];
+                    }
+                    else{
+                        Esum += f_domain[i];
+                        Ehighf += f_domain[i];
+                    }
+                }
+                highpercent = Ehighf / Esum;
+                Bumps.setText("road surface conditions coefficient:" + highpercent);
+                t_domain = new double[1024];
+                Esum = 0;
+                Ehighf = 0;
                 clock = 0;
             }
             else {
@@ -168,6 +201,35 @@ public class MainActivity extends Activity implements SensorEventListener,
             randomFile.close();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public class DFT {
+
+        public double[] dft(double[] x) {
+            int n = x.length;
+
+            // exp(-2i*n*PI)=cos(-2*n*PI)+i*sin(-2*n*PI)=1
+            if (n == 1)
+                return x;
+
+            double[] result = new double[n], result1 = new double[n], result2 = new double[n];
+            for (int i = 0; i < n; i++) {
+                result1[i] = 0;
+                result2[i] = 0;
+                for (int k = 0; k < n; k++) {
+                    //使用欧拉公式e^(-i*2pi*k/N) = cos(-2pi*k/N) + i*sin(-2pi*k/N)
+                    double p = -2 * k * Math.PI / n;
+                    result1[i] += (x[k] * Math.cos(p));
+                    result2[i] -= (x[k] * Math.sin(p));
+                    /*
+                    double m = new Complex(Math.cos(p), Math.sin(p));
+                    result[i].plus(x[k].multiple(m));
+                    */
+                }
+                result[i] = Math.sqrt(result1[i] * result1[i] + result2[i] * result2[i]);
+            }
+            return result;
         }
     }
 
